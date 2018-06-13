@@ -1,5 +1,6 @@
 # **TÌM HIỂU CƠ BẢN VỀ NETWORKING**
-## **Khái niệm:** Mạng máy tính là tập hợp các máy tính kết nối với nhau dựa trên một kiến trúc nào đó để trao đổi dữ liệu. VD: mạng Internet, mang Ethernet, mạng Lan, mạng không dây….
+## **Khái niệm:** 
+*	Mạng máy tính là tập hợp các máy tính kết nối với nhau dựa trên một kiến trúc nào đó để trao đổi dữ liệu. VD: mạng Internet, mang Ethernet, mạng Lan, mạng không dây….
 *	Giúp nhiều người có thể dùng chung 1 phần mềm tiện ích.
 *	Chia sẻ tài nguyên với nhau 1 cách dễ dàng.
 *	Kết nối với các thành phần, thiết bị khác mà không cần kết nối thủ công.
@@ -15,7 +16,8 @@
 **	Ưu điểm: Xử lý nhanh và manh, có thể dùng để chạy các ứng dụng đòi hỏi tốc độ xử lý lớn.
 **	Khuyết điểm: giống như mô hình phân tán là dữ liệu khó đồng bộ và sao lưu, khả năng nhiễm virus rất cao.
 
-## ** Kiến trúc mạng: ** bao gồm hình trạng(topology) và giao thức (protocol).
+## **Kiến trúc mạng:** 
+	Bao gồm hình trạng(topology) và giao thức (protocol).
 *	Hình trạng (topology):
 **	Trục(Bus): dùng một kênh chung để truyền dữ liệu, mỗi máy tính và các thiết bị đầu cuối sẽ được gắn vào đó, mô hình hoạt động theo các liên kết Point-to-Multipoint or Broadcast (quảng bá đến các nút con or nút ngang hàng).
 ***	Ưu điểm: Dễ thiết kế và chi phí thấp
@@ -30,7 +32,8 @@
 
 *	Giao thức(protocol): Quy tắc truyền thông( Gửi-Nhận các thông tin)  định nghĩa khuân dạng dữ liệu, thông điệp. VD: TCP,UDP, IP, HTTP,....
 
-## ** Mô hình truyền thông tin: ** bao gồm 3 giai đoạn: thiết lập kênh truyền, truyền dữ liệu và giải phóng kênh truyền.
+## **Mô hình truyền thông tin:** 
+	Bao gồm 3 giai đoạn: thiết lập kênh truyền, truyền dữ liệu và giải phóng kênh truyền.
 *	Chuyển mạch dữ liệu theo kênh: khi hai trạm cần trao đổi thông tin với nhau thì giữa chúng sẽ thiết lâp một “kênh” cố định và duy trì tới lúc một bên ngắt kết nối. Dữ liệu chỉ được truyền theo con đường cố định này.
 Kỹ thuật này thường được sử dụng trong các kết nối ATM(Asynchronous Transfer Mode-chế độ truyền không đồng bộ-truyền dữ liệu, âm thanh và hình ảnh số hóa) và Dial-up ISDN(Integrated Services Digital Networks-chỉ truyền dịch vụ thoại và chuyển mạch gói tốc độ thấp).
 **	Ưu điểm: tốc độ truyền được đảm bảo do kênh truyền được dành riêng trong suốt quá trình giao tiếp phù hợp với những ứng dụng đòi hỏi thời gian thực như audio và video.
@@ -46,9 +49,9 @@ Kỹ thuật này thường được sử dụng trong các kết nối ATM(Asyn
 
 *	Truyền thông hướng liên kết (thiết lập liên kết-truyền dữ liệu-hủy bỏ liên kết)  - TCP và không liên kết (chỉ truyền dữ liệu)-UDP
 
-## ** Mô hình phân tâng OSI: **
+## **Mô hình phân tâng OSI:**
 
-![alt](OSI.PNG)
+![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/Network/OSI.PNG)
 
 *	Physical: điều khiển việc truyền tải các bit trên đường truyền vật lý. Nó định nghĩa các đặc tính vật lý như tín hiệu điện, trạng thái đường truyền, phương pháp mã hóa dữ liệu và các loại đầu nối được sử dụng gồm hữu tuyến ( Twisted Pair-Coaxial Cable-Fiber Optics) và vô tuyến không dây (Radio, hồng ngoại, ánh sáng)
 Sử dụng các tín hiệu rời rạc, điện áp khác nhau để biểu diễn các bit 0 và 1.
@@ -62,16 +65,16 @@ Sử dụng các tín hiệu rời rạc, điện áp khác nhau để biểu di
 [Nguồn tham khảo](https://www.digistar.vn/quy-trinh-truyen-goi-tin-trong-mo-hinh-osi/
 )
 
-## ** Mô hình TCP/IP: **
+## **Mô hình TCP/IP:**
 
-![alt](TCP1.PNG)
+![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/Network/TCP1.PNG)
 
 ** Quá trình đóng gói: ** đi qua mỗi tầng thì gói tin đều được thêm 1 phần header
 
-![alt](TCP2.PNG)
+![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/Network/TCP2.PNG)
 
-![alt](TCP3.PNG)
+![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/Network/TCP3.PNG)
 
-## ** Định danh trên Internet: **
+## **Định danh trên Internet:**
 
-![alt](dindanh.PNG)
+![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/Network/dindanh.PNG)
