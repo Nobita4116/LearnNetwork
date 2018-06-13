@@ -2,7 +2,7 @@
 ## Khái niệm.
 Linux Bridge là một phần mềm được tích hợp vào trong nhân Linux để giải quyết vấn đề ảo hóa phần network trong các máy vật lý. Về mặt logic Linux Bridge sẽ tạo ra một con switcch ảo để cho các VM kết nối đưuọc vào và có thể nói chuyện được với nhau cũng như sử dụng ra mạng bên ngoài.
 Mô hình kiến trúc máy tính khi có và không có bridge:
-![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/image/BridgeAndNobridge.PNG)
+![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/LinuxBridge/BridgeAndNobridge.PNG)
 
 Khi không có bridge: hệ điều hành máy tính đươc kết nối trực tiếp với card mạng vật lý (eth0) qua đó kết nối với internet bên ngoài.
 Khi có bridge: bridge sẽ đóng vài trò làm 1 con switch ảo ở trong máy tính. Bridge sẽ cần đầu vào là card mạng vật lý (eth0) và tạo ra các port ảo để cung cấp mạng cho hệ điều hành của máy tính (br0) và các máy ảo (eth1).
@@ -11,9 +11,9 @@ Một số thuật ngữ đi kèm:
 * Bridge: tương đương switch layer 2.
 
 ## Kiến trúc
-![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/image/Architecture1.PNG)
+![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/LinuxBridge/Architecture1.PNG)
 
-![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/image/Architecture2.PNG)
+![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/LinuxBridge/Architecture2.PNG)
 
 Một số thuật ngữ đi kèm:
 * Tab/Turn : là các thiết bị hạt nhân mạng ảo, được hỗ trợ hoàn toàn nằm trong phần mềm
@@ -31,7 +31,7 @@ STP ( Spanning Tree Protocol) : giao thức chống lặp gói tin trong mạng.
 	* STP là một giao thức ngăn chặn sự lặp vòng, cho phép các bridge truyền thông với nhau để phát hiện vòng lặp vật lý trong mạng. Sau đó giao thức này sẽ định rõ một thuật toán mà bridge có thể tạo ra một topology luận lý chứa loop-free. Nói cách khác STP sẽ tạo ra một cấu trúc cây của free-loop gồm các lá và các nhánh nối toàn bộ mạng lớp 2.
 	* Vòng lặp xảy ra trong mạng với nhiều nguyên nhân. Hầu hết các nguyên nhân thông thường là kết quả của việc cố gắng tính toán để cung cấp khả năng dự phòng mà ở đây là một link hỏng or switch bị hỏng trong khi các link và các switch vẫn tiếp tục hoạt động
 
-![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/image/switch.PNG)
+![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/LinuxBridge/switch.PNG)
 
  * Có 2 nguyên nhân chính dẫn đến hiện tượng lặp vòng:
 	* Do switch gửi Broadcast.
