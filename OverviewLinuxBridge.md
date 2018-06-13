@@ -3,6 +3,7 @@
 Linux Bridge là một phần mềm được tích hợp vào trong nhân Linux để giải quyết vấn đề ảo hóa phần network trong các máy vật lý. Về mặt logic Linux Bridge sẽ tạo ra một con switcch ảo để cho các VM kết nối đưuọc vào và có thể nói chuyện được với nhau cũng như sử dụng ra mạng bên ngoài.
 Mô hình kiến trúc máy tính khi có và không có bridge:
 ![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/image/BridgeAndNobridge.PNG)
+
 Khi không có bridge: hệ điều hành máy tính đươc kết nối trực tiếp với card mạng vật lý (eth0) qua đó kết nối với internet bên ngoài.
 Khi có bridge: bridge sẽ đóng vài trò làm 1 con switch ảo ở trong máy tính. Bridge sẽ cần đầu vào là card mạng vật lý (eth0) và tạo ra các port ảo để cung cấp mạng cho hệ điều hành của máy tính (br0) và các máy ảo (eth1).
 Một số thuật ngữ đi kèm:
@@ -11,6 +12,7 @@ Một số thuật ngữ đi kèm:
 
 ## Kiến trúc
 ![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/image/Architecture1.PNG)
+
 ![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/image/Architecture2.PNG)
 
 Một số thuật ngữ đi kèm:
