@@ -282,7 +282,7 @@ là một Bridge có nhiều cổng. Switch có thể liên kết được nhi�
 	*	Cấu trúc Differentiated Services: dữ liệu đi vào mạng được phân loại thành các lớp khác nhau để phân loại cách đối xử của mạng đối với dữ liệu. Thực hiện thông qua các tool QoS là PQ, CQ, WFQ và WRED.
 
 
-Routing:
+## **Routing:**
 *	What: (định tuyến) là cách mà hệ thống tìm đường đi từ mạng này tới mạng khác. Thông tin về định tuyến có thể được cập nhật tự động từ các router khác hoặc do người quản trị chỉ định cho router. Như vậy router là thiết bị có vai trò kết nối, định tuyến và vận chuyển dữ liệu từ mạng này sang mạng khác. Gồm có 2 loại: hardwave router và softwave router.
 *	How: Sử dụng các thuật toán định tuyến.
 	*	Thuật toán vector khoảng cách: Distance vector routing protocol
