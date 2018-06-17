@@ -20,7 +20,7 @@
 	
 	### ** 2.1 Kiến trúc tổng quan **
 	
-	![alt](ovs_arch.jpg)
+	![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/OpenSwitch/ovs_arch.jpg)
 	- Open vSwitch thường được sử dụng để kết nối các VMs/containers trong một host. Ví dụ như trên OpenStack compute node, nó được sử dụng với vai trò là integration bridge để kết nối các VMs chạy trên Compute node đó. Nó quản lý cả các port vật lý (eth0, eth1) và các port ảo (ví dụ như tap port của các VMs).
 	- Ba khối thành phần chính của Open vSwitch được mô tả như trên hình:
 		- vswitchd:
@@ -34,7 +34,7 @@
 	
 	### ** 2.2 Kiến trúc chi tiết **
 	
-	![alt](ovs_detail.png)
+	![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/OpenSwitch/ovs_detail.png)
 	
 ## ** 3. Các thành phân của Open vSwitch **
 	
@@ -48,7 +48,7 @@
 			- system thông qua abstract interface là netdev
 		- ovs-vswitchd triển khai mirroring, bonding và VLANs
 		
-		![alt](vswitchd_ovsdb_ofproto.png)
+		![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/OpenSwitch/vswitchd_ovsdb_ofproto.png)
 		
 	### ** 3.2 ovsdb-server **
 		- Là một deamon quản lý và điều khiển bất kỳ số lượng công tắc Open vSwitch nào trên máy tính vật lý.
@@ -60,7 +60,7 @@
 		- ovsdb-server cung cấp giao diện RPC(remote procedure call) tới ovsdb. Nó hỗ trợ trình khách JSON-RPC kết nối tới thông qua passive TCP/IP hoặc Unix domain sockets.
 		- ovsdb-server chạy hoặc như một backup server hoặc như một active server. Tuy nhiên chỉ có active server mới xử lý giao dịch làm thay đổi ovsdb.
 		
-		![alt](ovsdb_tables.jpg)
+		![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/OpenSwitch/ovsdb_tables.jpg)
 	
 	### ** 3.4 datapath **
 		- Module chính chịu trách nhiệm chuyển tiếp gói tin trong Open vswitch, triển khai trong kernelspace nhằm mục đích đạt hiệu năng cao. Nó caches lại OpenFlow flows và thực thi các action trên các gói tin nhận được nếu các gói tin nó match với một flow đã tồn tại. Nếu gói tin không khớp với bất kì flow nào thì gói tin sẽ được chuyển lên ovs-vswitchd. Nếu flow matching tại vswitchd thành công thì nó sẽ gửi gói tin lại cho kernel datapath kèm theo các action tương ứng để xử lý gói tin đồng thời thực hiện cache lại flow đó vào datapath để datapath xử lý những gói tin cùng loại đến tiếp sau. Hiệu năng cao đạt được ở đây là vì thực tế hầu hết các gói tin sẽ match flows thành công tại datapath và do đó sẽ được xử lý trực tiếp tại kernelspace.
@@ -72,7 +72,7 @@
 
 ## ** 4. Xử lý gói tin trong Open vSwitch **
 	
-	![alt](ovs_packet_flow.jpg)
+	![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/OpenSwitch/ovs_packet_flow.jpg)
 	
 	- Open vSwitch là một phần mềm switch hỗ trợ OpenFlow
 	- OpenFlow controller chịu trách nhiệm hướng dẫn cho datapath biết làm sao xử lý các loại gói khác nhau, hay còn gọi là flows. Một flow mô tả hành động mà datapath thực hiện để xử lý các gói tin của cùng một loại như thế nào, hay còn được gọi là action. Các kiểu hành động bao gồm chuyển tiếp tới port khác, thay đổi vlan tag,... Quá trình tìm kiếm flow khớp với gói tin nhận được gọi là flow matching.
