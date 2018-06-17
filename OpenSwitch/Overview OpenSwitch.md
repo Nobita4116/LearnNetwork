@@ -1,7 +1,7 @@
 # Tìm hiểu về Open vSwitch
 
 ## 1. Open vSwitch là gì ? 
-	OpenVSwitch là phần mềm cung cấp các giải pháp ảo hóa network
+OpenVSwitch là phần mềm cung cấp các giải pháp ảo hóa network
 *	Open vSwitch là phần mềm switch mã nguồn mở hỗ trợ giao thức OpenFlow, sử dụng cho ảo hóa vswitch trong môi trường ảo hóa của server
 *	Open vSwitch được sử dụng với các hypervisors để kết nối giữa các máy ảo trên một host vật lý và các máy ảo giữa các host vật lý khác nhau qua mạng.
 *	Open vSwitch cũng được sử dụng trên một số thiết bị chuyển mạch vật lý (Ví dụ: switch Pica8)
