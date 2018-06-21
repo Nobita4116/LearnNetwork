@@ -33,7 +33,7 @@ Bao gồm hình trạng(topology) và giao thức (protocol)
 *	Giao thức(protocol): Quy tắc truyền thông( Gửi-Nhận các thông tin)  định nghĩa khuân dạng dữ liệu, thông điệp. VD: TCP,UDP, IP, HTTP,....
 
 ## **Mô hình truyền thông tin:** 
-	Bao gồm 3 giai đoạn: thiết lập kênh truyền, truyền dữ liệu và giải phóng kênh truyền.
+Bao gồm 3 giai đoạn: thiết lập kênh truyền, truyền dữ liệu và giải phóng kênh truyền.
 *	Chuyển mạch dữ liệu theo kênh: khi hai trạm cần trao đổi thông tin với nhau thì giữa chúng sẽ thiết lâp một “kênh” cố định và duy trì tới lúc một bên ngắt kết nối. Dữ liệu chỉ được truyền theo con đường cố định này.
 *	Kỹ thuật này thường được sử dụng trong các kết nối ATM(Asynchronous Transfer Mode-chế độ truyền không đồng bộ-truyền dữ liệu, âm thanh và hình ảnh số hóa) và Dial-up ISDN(Integrated Services Digital Networks-chỉ truyền dịch vụ thoại và chuyển mạch gói tốc độ thấp).
 	*	Ưu điểm: tốc độ truyền được đảm bảo do kênh truyền được dành riêng trong suốt quá trình giao tiếp phù hợp với những ứng dụng đòi hỏi thời gian thực như audio và video.
