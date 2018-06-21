@@ -17,7 +17,7 @@
 	*	Khuyết điểm: giống như mô hình phân tán là dữ liệu khó đồng bộ và sao lưu, khả năng nhiễm virus rất cao.
 
 ## **Kiến trúc mạng:** 
-	Bao gồm hình trạng(topology) và giao thức (protocol)
+Bao gồm hình trạng(topology) và giao thức (protocol)
 *	Hình trạng (topology)
 	*	Trục(Bus): dùng một kênh chung để truyền dữ liệu, mỗi máy tính và các thiết bị đầu cuối sẽ được gắn vào đó, mô hình hoạt động theo các liên kết Point-to-Multipoint or Broadcast (quảng bá đến các nút con or nút ngang hàng).
 		*	Ưu điểm: Dễ thiết kế và chi phí thấp
