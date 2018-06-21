@@ -53,8 +53,7 @@ Bao gồm 3 giai đoạn: thiết lập kênh truyền, truyền dữ liệu và
 
 ![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/Network/OSI.PNG)
 
-*	Physical: điều khiển việc truyền tải các bit trên đường truyền vật lý. Nó định nghĩa các đặc tính vật lý như tín hiệu điện, trạng thái đường truyền, phương pháp mã hóa dữ liệu và các loại đầu nối được sử dụng gồm hữu tuyến ( Twisted Pair-Coaxial Cable-Fiber Optics) và vô tuyến không dây (Radio, hồng ngoại, ánh sáng)
-*	Sử dụng các tín hiệu rời rạc, điện áp khác nhau để biểu diễn các bit 0 và 1.
+*	Physical: điều khiển việc truyền tải các bit trên đường truyền vật lý. Nó định nghĩa các đặc tính vật lý như tín hiệu điện, trạng thái đường truyền, phương pháp mã hóa dữ liệu và các loại đầu nối được sử dụng gồm hữu tuyến ( Twisted Pair-Coaxial Cable-Fiber Optics) và vô tuyến không dây (Radio, hồng ngoại, ánh sáng). Sử dụng các tín hiệu rời rạc, điện áp khác nhau để biểu diễn các bit 0 và 1.
 *	Data link layer:  Truyền dữ liệu giữa các thành phần kết nối trong mạng bằng cách thêm một header chứa các địa chỉ phần cứng nơi nhận và địa chỉ nguồn của nó.	Bao gồm: đóng gói và địa chỉ hóa,truy cập đường truyền, đưa dữ liệu vào mạng phát hiện và sửa lỗi, kiểm suốt luồng và kiểm soát truy cập đường truyền. Dữ liệu dưới dạng các Frame.
 *	Network layer:  Chọn đường, định tuyến gói tin từ nguồn đến đích. Dữ liệu dưới dạng thành nhiều gói Package.
 *	Transport layer:  Xử lý việc truyền nhận dữ liệu cho các ứng dụng ( dữ liệu được chia nhỏ thành nhiều Segment bổ sung các thông tin về phương thức vận chuyển để đảm bảo tính bảo mật, tin cậy)
@@ -69,7 +68,7 @@ Bao gồm 3 giai đoạn: thiết lập kênh truyền, truyền dữ liệu và
 
 ![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/Network/TCP1.PNG)
 
-** Quá trình đóng gói: **
+**Quá trình đóng gói:**
 đi qua mỗi tầng thì gói tin đều được thêm 1 phần header
 
 ![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/Network/TCP2.PNG)
@@ -105,7 +104,6 @@ Bao gồm 3 giai đoạn: thiết lập kênh truyền, truyền dữ liệu và
 	Với DHCP, toàn bộ quá trình này được tự động hóa và được quản lý tập trung. Máy chủ DHCP duy trì một tập hợp các địa chỉ IP và thuê một địa chỉ cho bất kỳ máy khách có hỗ trợ DHCP nào khi nó khởi động trên mạng. Bởi vì các địa chỉ IP là động (thuê) thay vì tĩnh (được gán vĩnh viễn), các địa chỉ không còn sử dụng sẽ tự động được trả về pool để tái phân bổ.
 *	HOW: DHCP tự động quản lý các địa chỉ IP và loại bỏ được các lỗi có thể làm mất liên lạc. Nó tự động gán lại các địa chỉ chưa được sử dụng. DHCP cho thuê địa chỉ trong một khoảng thời gian, có nghĩa là những địa chỉ này sẽ còn dùng được cho các hệ thống khác.
 
-![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/Network/IP4vsIPv6.PNG)
 
 ![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/Network/IP4vsIPv6.2.PNG)
 
@@ -221,7 +219,7 @@ Bao gồm 3 giai đoạn: thiết lập kênh truyền, truyền dữ liệu và
 *	Why:
 ![alt](https://github.com/Nobita4116/LearnNetwork/blob/master/Network/Proxy.PNG)
 
-## **Firewall: - tầng vận chuyển**
+## **Firewall:**
 
 *	What: là một kỹ thuật tích hợp vào hệ thống mạng để chống sự truy cập trái phép nhằm bảo vệ các nguồn thông tin nội bộ và hạn chế sự xâm nhập không mong muốn từ bên ngoài hệ thống. Nó phải được đặt nằm giữa hệ thống mạng LAN local và mạng Internet bên ngoài, đồng thời được yêu cầu luôn chạy nền để có thể bảo vệ hệ thống. Firewall sẽ giám sát dữ liệu trao đổi  giữa máy tính, máy chủ và các thiết bị định tuyến trong hệ thống mạng để kiểm tra xem chúng có an toàn không. Firewal có thể là phần cứng (router) hoặc phần mềm.
 	*	Phân loại: 
